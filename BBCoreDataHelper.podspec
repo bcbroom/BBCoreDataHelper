@@ -25,9 +25,9 @@ Core Data helper class from the book, with example class for "Grocery Dude" app.
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.resources = 'Pod/Assets/*.png, Pod/Assets/*.storyboard'
+  s.resources = 'Pod/Assets/*.png', 'Pod/Assets/*.storyboard'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'CoreData'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
