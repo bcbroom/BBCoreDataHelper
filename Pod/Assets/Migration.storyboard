@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uWP-jN-CO3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--MigrationVC-->
+        <scene sceneID="JPC-0r-YGf">
+            <objects>
+                <viewController storyboardIdentifier="migration" id="uWP-jN-CO3" customClass="MigrationVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yo4-h0-p6j"/>
+                        <viewControllerLayoutGuide type="bottom" id="dnD-NI-l67"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pTD-RB-XD7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Migration Progress 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-8W-kVF">
+                                <rect key="frame" x="20" y="254" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zHp-vw-PMj">
+                                <rect key="frame" x="20" y="283" width="280" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fbg-8W-kVF" secondAttribute="trailing" constant="20" symbolic="YES" id="1C4-kc-nj7"/>
+                            <constraint firstItem="zHp-vw-PMj" firstAttribute="leading" secondItem="fbg-8W-kVF" secondAttribute="leading" id="CGP-Ma-pCI"/>
+                            <constraint firstItem="fbg-8W-kVF" firstAttribute="leading" secondItem="pTD-RB-XD7" secondAttribute="leading" constant="20" symbolic="YES" id="QDj-by-O2b"/>
+                            <constraint firstItem="zHp-vw-PMj" firstAttribute="trailing" secondItem="fbg-8W-kVF" secondAttribute="trailing" id="UVz-AZ-g9S"/>
+                            <constraint firstItem="zHp-vw-PMj" firstAttribute="top" secondItem="fbg-8W-kVF" secondAttribute="bottom" constant="8" symbolic="YES" id="hJH-OG-O6c"/>
+                            <constraint firstItem="zHp-vw-PMj" firstAttribute="centerY" secondItem="pTD-RB-XD7" secondAttribute="centerY" id="xvW-nC-hwk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="fbg-8W-kVF" id="cje-JC-waV"/>
+                        <outlet property="progressView" destination="zHp-vw-PMj" id="yYo-2s-nVF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9T-1G-HJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-645"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
