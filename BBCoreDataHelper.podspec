@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BBCoreDataHelper"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Core Data helper classes from Learning Core Data for iOS, by Tim Roadley."
   s.description      = <<-DESC
 Core Data helper class from the book, with example class for "Grocery Dude" app. Example and code are available from timroadley.com. This pod was made solely to put helper classes in a package to easily incorporate into my own projects.
