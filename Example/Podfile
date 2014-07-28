@@ -1,0 +1,10 @@
+target 'BBCoreDataHelper', :exclusive => true do
+  pod "BBCoreDataHelper", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "BBCoreDataHelper", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
